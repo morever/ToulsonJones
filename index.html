@@ -38,9 +38,9 @@
         <script type="text/javascript">
             /* <![CDATA[ */
             $(document).ready(function() {
-                var Brand = StackMob.Model.extend({ schemaName: 'brands' });
-                var Brands = StackMob.Collection.extend({ model: Brand });
-                var myBrands = new Brands();
+                var Brands = StackMob.Model.extend({ schemaName: 'brands' });
+                var Brandses = StackMob.Collection.extend({ model: Brands });
+                var myBrands = new Brandses();
                 var q = new StackMob.Collection.Query();
                 q.isNotNull('brand_name');
                 myBrands.count(q, {
