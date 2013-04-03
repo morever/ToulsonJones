@@ -45,7 +45,7 @@
                 q.isNotNull('brand_name');
                 myBrands.count(q, {
                     success: function(count) {
-                        console.debug(count);
+                        console.log('count is:' + count );
                     },
                     error: function(model, response) {
                         console.debug('Error getting count');
