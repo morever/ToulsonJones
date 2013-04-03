@@ -42,7 +42,7 @@
                 var Brands = StackMob.Collection.extend({ model: Brand });
                 var myBrands = new Brands();
                 var q = new StackMob.Collection.Query();
-                q.equals('title', 'Send Data to StackMob!');
+                q.isNotNull('brand_name');
                 myBrands.count(q, {
                     success: function(count) {
                         console.debug(count);

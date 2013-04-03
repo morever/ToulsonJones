@@ -5,7 +5,7 @@
     <ignored path="ToulsonJones.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/crossdomain.xml" changelist="f51202cb-22d9-46dd-b617-23179ea1e514" time="1364993122160" ignored="false" />
-    <file path="/index.html" changelist="f51202cb-22d9-46dd-b617-23179ea1e514" time="1365006552770" ignored="false" />
+    <file path="/index.html" changelist="f51202cb-22d9-46dd-b617-23179ea1e514" time="1365007234471" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="84" selection-start="867" selection-end="867" vertical-scroll-proportion="0.4981685">
+            <state line="44" column="40" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.529304">
               <folding />
             </state>
           </provider>
@@ -294,7 +294,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="84" selection-start="867" selection-end="867" vertical-scroll-proportion="0.4981685">
+        <state line="44" column="40" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.529304">
           <folding />
         </state>
       </provider>
