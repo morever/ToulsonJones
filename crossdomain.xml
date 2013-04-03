@@ -4,8 +4,7 @@
     <!-- Read this: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html -->
 
     <!-- Most restrictive policy: -->
-    <site-control permitted-cross-domain-policies="none"/>
-
+    <allow-access-from domain="api.stackmob.com" />
     <!-- Least restrictive policy: -->
     <!--
     <site-control permitted-cross-domain-policies="all"/>
