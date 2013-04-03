@@ -44,8 +44,8 @@
                 var q = new StackMob.Collection.Query();
                 q.isNotNull('brand_name');
                 myBrands.count(q, {
-                    success: function(count) {
-                        console.log('count is:' + count );
+                    success: function(count2) {
+                        console.log('count is:' + count2 );
                     },
                     error: function(model, response) {
                         console.log('Error getting count');
