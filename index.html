@@ -43,11 +43,11 @@
                         var brandArray = brands.toJSON();
                         var imageListHTML = "";
                         for(var i=0; i<brandArray.length; i++){
-                            imageListHTML += "<a href=\"\img\\";
+                            imageListHTML += "<a href=\"/img/";
                             var brandLinkArray = brandArray[i].brand_image.split(".");
                             var brandLink = brandLinkArray[0];
                             imageListHTML += brandLink;
-                            imageListHTML += "\"><img class=\"brandimage\" src=\"\img\\";
+                            imageListHTML += "\"><img class=\"brandimage\" src=\"/img/";
                             imageListHTML += brandArray[i].brand_image;
                             imageListHTML += "\"/></a>\n";
                             var divide3 = i%3;
