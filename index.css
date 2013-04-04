@@ -4,10 +4,8 @@ body {
 
 code { font-weight: bold; }
 
-.menu {
-    margin: 0;
+.menuimage {
     padding: 0;
-    border: 0;
     float: left;
 }
 
