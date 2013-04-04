@@ -38,14 +38,14 @@
         <script type="text/javascript">
             /* <![CDATA[ */
             $(document).ready(function() {
-                var Brands = StackMob.Model.extend({ schemaName: 'brands' });
-                var Brandses = StackMob.Collection.extend({ model: Brands });
-                var myBrands = new Brandses();
+                var Brand = StackMob.Model.extend({ schemaName: 'brand' });
+                var Brands = StackMob.Collection.extend({ model: Brand });
+                var myBrands = new Brands();
                 var q = new StackMob.Collection.Query();
                 q.isNotNull('brand_name');
-                myBrands.count(q, {
-                    success: function(count2) {
-                        console.log('count is:' + count2 );
+                myBrands.query(q, {
+                    success: function(brands) {
+                        console.log('count is:' + brands.length );
                     },
                     error: function(model, response) {
                         console.log('Error getting count');
