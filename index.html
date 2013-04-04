@@ -43,7 +43,7 @@
                         var brandArray = brands.toJSON();
                         var imageListHTML = "";
                         for(var i=0; i<brandArray.length; i++){
-                            imageListHTML += "<a href=\"";
+                            imageListHTML += "<a href=\"\img\\";
                             imageListHTML += brand_image;
                             imageListHTML += "\"><img class=\"brandimage\" src=\"\img\\";
                             imageListHTML += brandArray[i].brand_image;
@@ -53,6 +53,7 @@
                                 imageListHTML += "<br/>\n";
                             }
                         }
+                        console.log(imageListHTML);
                         document.getElementById("demo").innerHTML = imageListHTML;
                     },
                     error: function(model, response) {
