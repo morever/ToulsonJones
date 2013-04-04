@@ -6,6 +6,8 @@ code { font-weight: bold; }
 
 .menu {
     margin: 0;
-    float:left;
+    padding: 0;
+    border: 0;
+    float: left;
 }
 
