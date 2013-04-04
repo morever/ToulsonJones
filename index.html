@@ -56,7 +56,7 @@
                             }
                         }
                         console.log(imageListHTML);
-                        //document.getElementById("demo").innerHTML = imageListHTML;
+                        document.getElementById("brand_container").innerHTML = imageListHTML;
                     },
                     error: function(model, response) {
                         console.log('Error getting count');
@@ -71,7 +71,6 @@
 <body>
 <div class="success">
     <div id="brand_container">
-        <p id="demo"></p>
     </div>
     <a href=""><img class="menuimage" src="img/menu01.png"/></a>
     <a href=""><img class="menuimage" src="img/menu02.png"/></a>
