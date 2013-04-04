@@ -16,11 +16,10 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>
         <script src="http://static.stackmob.com/js/stackmob-js-0.8.1-bundled-min.js"></script>
+        <script src="cordova-2.5.0.js"></script>
         <script type="text/javascript">
             /* <![CDATA[ */
             // Initialize StackMob object
-            // Copy your init data from here: https://dashboard.stackmob.com/sdks/js/config
-            // Your other app information is here: https://dashboard.stackmob.com/settings
             StackMob.init({
                 appName: 'toulsonjones',
                 clientSubdomain: 'tombliinktv',
@@ -30,11 +29,6 @@
             /* ]]> */
         </script>
 
-        <!--
-        *************************************
-        StackMob JS SDK code that creates and saves a TestObject
-        *************************************
-        -->
         <script type="text/javascript">
             /* <![CDATA[ */
             $(document).ready(function() {
@@ -43,14 +37,16 @@
                 var myBrands = new Brands();
                 var q = new StackMob.Collection.Query();
                 q.isNotNull('brand_name');
+
                 myBrands.query(q, {
                     success: function(brands) {
-                        console.log('count is:' + brands.length );
+                        document.getElementById("demo").innerHTML=brands.length;
                     },
                     error: function(model, response) {
                         console.log('Error getting count');
                     }
                 })
+
             });
             /* ]]> */
         </script>
@@ -58,11 +54,12 @@
     </head>
 <body>
 <div class="success">
-    <h1>Toulson Jones</h1>
-    <img class="menuimage" src="img/menu01.png"/>
-    <img class="menuimage" src="img/menu02.png"/>
-    <img class="menuimage" src="img/menu03.png"/>
-    <img class="menuimage" src="img/menu04.png"/>
+    <div id="brand_container">
+    </div>
+    <a href=""><img class="menuimage" src="img/menu01.png"/></a>
+    <a href=""><img class="menuimage" src="img/menu02.png"/></a>
+    <a href=""><img class="menuimage" src="img/menu03.png"/></a>
+    <a href=""><img class="menuimage" src="img/menu04.png"/></a>
 </div>
 </body>
 
