@@ -40,7 +40,8 @@
 
                 myBrands.query(q, {
                     success: function(brands) {
-                        var listLength = brands.length;
+                        var brandArray = brands.parse();
+                        var listLength = brandArray;
                         document.getElementById("demo").innerHTML = listLength.toString();
                     },
                     error: function(model, response) {
