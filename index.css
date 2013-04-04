@@ -5,6 +5,7 @@ body {
 code { font-weight: bold; }
 
 .menu {
+    padding: 0;
     float:left;
 }
 
