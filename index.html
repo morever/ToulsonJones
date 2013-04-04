@@ -41,11 +41,13 @@
                 myBrands.query(q, {
                     success: function(brands) {
                         var brandArray = brands.toJSON();
-                        var brandNames = "";
+                        var imageListHTML = "";
                         for(var i=0; i<brandArray.length; i++){
-                            brandNames += brandArray[i].brand_name;
+                            imageListHTML += "<img class=\"brandimage\" src=\"";
+                            imageListHTML += brandArray[i].brand_image;
+                            imageListHTML += "\"/>\n";
                         }
-                        document.getElementById("demo").innerHTML = brandNames;
+                        document.getElementById("demo").innerHTML = imageListHTML;
                     },
                     error: function(model, response) {
                         console.log('Error getting count');
