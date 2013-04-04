@@ -40,7 +40,8 @@
 
                 myBrands.query(q, {
                     success: function(brands) {
-                        document.getElementById("demo").innerHTML=brands.length;
+                        var listLength = brands.length;
+                        document.getElementById("demo").innerHTML = listLength;
                     },
                     error: function(model, response) {
                         console.log('Error getting count');
