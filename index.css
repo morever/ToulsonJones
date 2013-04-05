@@ -18,3 +18,12 @@ code { font-weight: bold; }
     float: left;
 }
 
+#brand_container{
+    height: 85.73%;
+}
+
+#menu{
+    clear:both;
+    height: 14.27%;
+}
+
